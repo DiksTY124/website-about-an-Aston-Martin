@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/global_style.css">	
+	<title>Aston Martin</title>
+</head>
+<body>
+	<div>
+		<header>
+			<div class="flex header_elem">
+			<div class = "title">Сайт создал Иван Калачин, КСП 246</div>
+			<div><img class="play-button" src="../img/photo_2025-05-09_20-14-30.png" onclick="playMusic()"/></div>
+			</div>
+		</header>
+	</div>
+
+	<div  class="wrapper">
+
+					<div class="header">Будущее Aston Martin.</div>
+
+					<a href="../html/index1.html"><button>На главную</button></a>
+
+						<div class = "text">
+							<h1>Электрификация</h1>
+							<p>Aston Martin активно работает над развитием электрических моделей. Компания планирует выпустить полностью электрический автомобиль уже в ближайшие годы, что позволит уменьшить углеродный след и привлечь экологически сознательных покупателей.</p> 
+						</div>
+
+						<div class = "text">
+							<h1>Новые модели</h1>
+							<p>В портфолио ожидуются новые спортивные и внедорожные модели, включая обновления классических моделей с модернизированными технологиями и дизайном.</p>
+						</div>
+
+						<div class = "text">
+							<h1>Инновации в технологии</h1>
+							<p>Aston Martin продолжает стремиться к внедрению новых технологий, таких как автономное вождение, улучшенные системы infotainment и высокий уровень безопасности.</p>
+						</div>
+
+						<div class = "text">
+							<h1>Партнерства</h1>
+							<p>Компания может расширять сотрудничество с другими брендами и технологическими гигантами, что поможет ускорить инновации и улучшить качество автомобилей.</p>
+						</div>
+
+						<div class = "text">
+							<h1>Расширение рынков</h1>
+							<p>Aston Martin может обратить внимание на новые рынки, такие как Азия и Америка, где наблюдается рост спроса на роскошные автомобили.</p>
+						</div>
+	</div>
+
+	<footer>
+		
+		<div class="wrapper flex">
+					<div>
+
+					<p><h1>Будущее Aston Martin.</h1></p>
+					<br>
+					<p><a href="../html/index1.html">Главная</a></p>
+					<br>
+					<p><a href="../html/index2.html">История компании Aston Martin.</a></p>
+					<br>
+					<p><a href="../html/index3.html">Наиболее известные модели Aston Martin.</a></p>
+
+					</div>
+					<div>
+
+					<h1>Сайт создал <br> Иван Калачин, КСП 246</h1>
+
+					<hr>
+
+					</div>
+		</div>
+
+	</footer>
+
+</body>
+
+<audio autoplay loop src="../music/TRALALERO_TRALALA.mp3" id="audio"></audio>
+
+<script>
+	function playMusic() {
+	  const audio = document.getElementById("audio");
+	  audio.play().catch(e => alert("Браузер заблокировал автовоспроизведение :("));
+	}
+  </script>
+
+<script type="importmap">
+	{
+		"imports": {
+			"three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+			"OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+			"GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+			"RectAreaLightHelper": "https://unpkg.com/three@0.139.0/examples/jsm/helpers/RectAreaLightHelper.js",
+			"RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+		}
+	}
+</script>
+
+<script type="module" src="../js/three.js"></script>
+
+</html>

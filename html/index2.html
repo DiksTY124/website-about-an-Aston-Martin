@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/global_style.css">	
+	<title>Aston Martin</title>
+</head>
+<body>
+	<div>
+		<header>
+			<div class="flex header_elem">
+			<div class = "title">Сайт создал Иван Калачин, КСП 246</div>
+			<div><img class="play-button" src="../img/photo_2025-05-09_20-14-30.png" onclick="playMusic()"/></div>
+			</div>
+		</header>
+	</div>
+
+	<div  class="wrapper">
+
+					<div class="header">История Aston Martin.</div>
+
+					<a href="../html/index1.html"><button>На главную</button></a>
+
+					<div class="text">
+						<p>
+							Компания Aston Martin была основана Лайонелом Мартином и Робертом Бэмфордом, которые продавали автомобили Singer в Западном Лондоне. Их компании Bamford и Martin были зарегистрированы в 1913 году.
+							Они также участвовали в гонках на автомобилях в рамках «Aston Hill Climb», и специальный автомобиль, построенный Мартином с использованием существующего двигателя и шасси, участвовал в соревнованиях в 1914 году.
+						</p>
+						<br>
+						<p>
+							Первый Aston Martin был построен и зарегистрирован в 1915 году и получил прозвище «Ведро для угля». Затем производство было остановлено на время Первой мировой войны, поскольку Мартин поступил в Адмиралтейство, а Бэмфорд — в Армейский корпус обслуживания.
+						</p>
+						<br>
+						<p>
+							После войны в 1920 году был построен первый новый Aston Martin, и компания продолжала производить автомобили, в основном для гонок, но также и для общественного использования, выпустив около 55 автомобилей до 1924 года. Перед Второй мировой войной компания несколько раз меняла владельца, а также свое официальное название на Aston Martin.
+						</p>
+						<br>
+						<p>
+							Несмотря на постоянно растущий престиж и армию преданных поклонников, Aston Martin по-прежнему нуждался в инвестициях для продолжения работы. Ford Motors приобрела значительный пакет акций в 1987 году, а в 1988 году дебютировала новая модель V8 Virage.
+						</p>
+						<br>
+						<p>
+							В 2007 году Aston Martin снова перешел из рук в руки, его купил консорциум, возглавляемый Дэвидом Ричардсом, председателем Prodrive. Тем не менее, как и при каждой предыдущей смене владельца, Aston Martin продолжал выпускать автомобили, для которых гипербола начинает терять смысл. Такие автомобили, как DB9, DBS V12, One-77, которых было построено всего 77 экземпляров, и V12 Virage и Zagato, продолжили традицию Aston Martin по созданию быстрых автомобилей с бескомпромиссным стилем и качеством.
+						</p>
+						<br>
+						<p>
+							Прочная ассоциация с Джеймсом Бондом сохранялась на протяжении всей эпохи Ford, когда автомобили Aston Martin были представлены в фильмах «Умри в другой раз», «Казино Рояль» и «Квант милосердия», и это продолжилось с концепт-каром DB10, созданным для фильма 2015 года «Спектр».
+						</p>
+						<br>
+						<p>
+							В 2013 году Aston Martin установила партнерские отношения с Mercedes-AMG, а к 2017 году судьба компании изменилась, и она была размещена на Лондонской фондовой бирже, став Aston Martin Lagonda Holdings PLC. После многих лет перемен в судьбе и смене владельцев есть веские основания для оптимизма в отношении марки, которая снова однозначно является британской: новые модели Aston Martin продаются по всей Великобритании и в 50 странах на шести континентах.
+						</p>
+					</div>
+	</div>
+
+	<footer>
+		
+		<div class="wrapper flex">
+					<div>
+
+					<p><h1>История компании Aston Martin.</h1></p>
+					<br>
+					<p><a href="../html/index1.html">Главная</a></p>
+					<br>
+					<p><a href="../html/index3.html">Наиболее известные модели.</a></p>
+					<br>
+					<p><a href="../html/index4.html">Будущее Aston Martin.</a></p>
+
+					</div>
+					<div>
+
+					<h1>Сайт создал <br> Иван Калачин, КСП 246</h1>
+
+					<hr>
+
+					</div>
+		</div>
+
+	</footer>
+
+</body>
+
+<audio autoplay loop src="../music/TRALALERO_TRALALA.mp3" id="audio"></audio>
+
+<script>
+	function playMusic() {
+	  const audio = document.getElementById("audio");
+	  audio.play().catch(e => alert("Браузер заблокировал автовоспроизведение :("));
+	}
+  </script>
+
+<script type="importmap">
+	{
+		"imports": {
+			"three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+			"OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+			"GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+			"RectAreaLightHelper": "https://unpkg.com/three@0.139.0/examples/jsm/helpers/RectAreaLightHelper.js",
+			"RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+		}
+	}
+</script>
+
+<script type="module" src="../js/three.js"></script>
+
+</html>

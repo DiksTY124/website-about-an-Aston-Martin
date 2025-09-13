@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/global_style.css">	
+	<title>Aston Martin</title>
+</head>
+<body>
+	<div>
+		<header>
+			<div class="flex header_elem">
+			<div class = "title">Сайт создал Иван Калачин, КСП 246</div>
+			<div><img class="play-button" src="../img/photo_2025-05-09_20-14-30.png" onclick="playMusic()"/></div>
+			</div>
+		</header>
+	</div>
+
+	<div  class="wrapper">
+
+					<div class="header">Наиболее известные модели Aston Martin.</div>
+
+					<a href="../html/index1.html"><button>На главную</button></a>
+
+						<div class = "text">
+							<h1>Aston Martin DB2 (1950–1953).</h1>
+							<p>Лёгкий и элегантный спортивный автомобиль с длинным капотом, плавно сужающейся кормой и узнаваемой решёткой радиатора.</p> 
+							<img src="../img/1952 Aston Martin DB2 Vantage Coupe 001.jpg" alt="">
+						</div>
+
+						<div class = "text">
+							<h1>Aston Martin DB5 (1963–1965).</h1>
+							<p>Модель, прославленная благодаря серии фильмов о Джеймсе Бонде. Дизайн: стремительный силуэт, большая вытянутая решётка радиатора, обилие хромированных элементов и выверенные пропорции кузова.</p>
+							<img src="../img/_uSuk0IgdGU.jpg" alt="">
+						</div>
+
+						<div class = "text">
+							<h1>Aston Martin DBS V8 (1969–1972).</h1>
+							<p>Автомобиль примечателен тем, что вместе с вариантами рядной «шестёрки» выпускалась и версия V8 — для того времени довольно редкое и смелое решение для британской марки.</p>
+							<img src="../img/95a3d6a6a01f2705b491e3767776698b.jpg" alt="">
+						</div>
+
+						<div class = "text">
+							<h1>Aston Martin DB7 (1994–2004).</h1>
+							<p>Модель с элегантными пропорциями — длинный нос, короткая кормовая часть и низкая линия крыши. За внешность отвечал известный дизайнер Ян Каллум, который заложил основу форм будущих Aston Martin.</p>
+							<img src="../img/db605ea6de79df3b588f08899848cf33.jpg" alt="">
+						</div>
+
+						<div class = "text">
+							<h1>Aston Martin Vanquish (2001–2007).</h1>
+							<p>Сочетал в себе туринг и элементы суперкара, имел харизматичный силуэт с мускулистыми боками и широкой колеёй. Главная «фишка» дизайна — крупные воздухозаборники на капоте, подчёркивающие мощь силового агрегата V12.</p>
+							<img src="../img/1_889.jpg" alt="">
+						</div>
+
+						<div class = "text">
+							<h1>Aston Martin One-77 (2009–2012).</h1>
+							<p>Суперкар, построенный полностью вручную, представлял собой альтернативу Bugatti Veyron.</p>
+							<img src="../img/42d74c936a427a980c7335b01edd3cc0.jpg" alt="">
+						</div>
+
+						<div class = "text">
+							<h1>Aston Martin Vulcan.</h1>
+							<p>Сверхлёгкий, футуристически выглядящий Aston Martin, наиболее известный своей оптимальной производительностью. Автомобиль напоминает реактивный самолёт на колёсах, был разработан как самый быстрый автомобиль на гоночной трассе и даже не разрешён для уличного вождения.</p>
+							<img src="../img/34dbdba62c84c5b32c4eb9426c013772.jpg" alt="">
+						</div>
+	</div>
+
+	<footer>
+		
+		<div class="wrapper flex">
+					<div>
+
+					<p><h1>Наиболее известные модели Aston Martin.</h1></p>
+					<br>
+					<p><a href="../html/index1.html">Главная</a></p>
+					<br>
+					<p><a href="../html/index2.html">История компании Aston Martin.</a></p>
+					<br>
+					<p><a href="../html/index4.html">Будущее Aston Martin.</a></p>
+
+					</div>
+					<div>
+
+					<h1>Сайт создал <br> Иван Калачин, КСП 246</h1>
+
+					<hr>
+
+					</div>
+		</div>
+
+	</footer>
+
+</body>
+
+<audio autoplay loop src="../music/TRALALERO_TRALALA.mp3" id="audio"></audio>
+
+<script>
+	function playMusic() {
+	  const audio = document.getElementById("audio");
+	  audio.play().catch(e => alert("Браузер заблокировал автовоспроизведение :("));
+	}
+  </script>
+
+<script type="importmap">
+	{
+		"imports": {
+			"three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+			"OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+			"GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+			"RectAreaLightHelper": "https://unpkg.com/three@0.139.0/examples/jsm/helpers/RectAreaLightHelper.js",
+			"RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+		}
+	}
+</script>
+
+<script type="module" src="../js/three.js"></script>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/global_style.css">	
+	<title>Aston Martin</title>
+</head>
+<body>
+	<div>
+		<header>
+			<div class="flex header_elem">
+			<div class = "title">Сайт создал Иван Калачин, КСП 246</div>
+			<div><img class="play-button" src="../img/photo_2025-05-09_20-14-30.png" onclick="playMusic()"/></div>
+			</div>
+		</header>
+	</div>
+
+	<div class="face">
+		<div class="container"></div>
+
+		<div class="intro"><div>Aston Martin.</div><div id="intro_text">Aston Martin.</div></div>
+	</div>
+
+	<div  class="wrapper">
+
+			<div>
+					<div class="text">
+						<h2>История компании Aston Martin.</h2>
+						<br>
+						Aston Martin была основана в 1913 году Лайонелом Мартином и Робертом Бэмфордом, с первоначальной целью создания гоночных автомобилей.
+						<br>
+						<a href="../html/index2.html"><button>Подробнее 👈</button></a>
+					</div>
+					<div class="text">
+						<h2>Наиболее известные модели.</h2>
+						<br>
+						Наиболее известные модели включают DB5, DB11 и Vantage, а также автомобили, появлявшиеся в фильмах о Джеймсе Бонде.
+						<br>
+						<a href="../html/index3.html"><button>👉 Подробнее</button></a>
+					</div>
+					<div class="text">
+						<h2>Будущее Aston Martin.</h2>
+						<br>
+						Компания планирует расширение модельного ряда и внедрение новых технологий, включая полную электризацию к 2030 году.
+						<br>
+						<a href="../html/index4.html"><button>Подробнее 👈</button></a>
+					</div>
+			</div>
+	</div>
+
+	<footer>
+		
+		<div class="wrapper flex">
+					<div>
+
+					<p><h1>Вы на главной</h1></p>
+					<br>
+					<p><a href="../html/index2.html">История компании Aston Martin.</a></p>
+					<br>
+					<p><a href="../html/index3.html">Наиболее известные модели.</a></p>
+					<br>
+					<p><a href="../html/index4.html">Будущее Aston Martin.</a></p>
+
+					</div>
+					<div>
+
+					<h1>Сайт создал <br> Иван Калачин, КСП 246</h1>
+
+					<hr>
+
+					</div>
+		</div>
+
+	</footer>
+
+</body>
+
+<audio autoplay loop src="../music/TRALALERO_TRALALA.mp3" id="audio"></audio>
+
+<script>
+	function playMusic() {
+	  const audio = document.getElementById("audio");
+	  audio.play().catch(e => alert("Браузер заблокировал автовоспроизведение :("));
+	}
+  </script>
+
+<script type="importmap">
+	{
+		"imports": {
+			"three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+			"OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+			"GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+			"RectAreaLightHelper": "https://unpkg.com/three@0.139.0/examples/jsm/helpers/RectAreaLightHelper.js",
+			"RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+		}
+	}
+</script>
+
+<script type="module" src="../js/three.js"></script>
+
+</html>
